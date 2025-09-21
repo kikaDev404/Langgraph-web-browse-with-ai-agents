@@ -1,18 +1,24 @@
-# What this project does
-This is a AI agent environment which aims to help users with Web browsing using AI agents. This project use Microsoft Playwright for web browsing and info gathering automation. The result of the browsing can then be send to **Discord** using **Discord Tool**. 
+# What This Project Does
+This project provides an AI agent environment designed to assist users with web browsing through AI agents.  
+It leverages **Microsoft Playwright** for automated browsing and information gathering.  
+The collected results can then be sent to **Discord** using the **Discord Tool**.
 
 # Key Functionalities
-You can retrive and autoamte the info gathering from any website which is passed to the llm in the chat. 
-once you are happy with the results, you can then push the results to the discord server if needed.
+- Automate and retrieve information from any website by passing it to the LLM in chat.  
+- Once satisfied with the results, you can push them directly to your Discord server if needed.  
 
-# Discord config
-If you want to push the info to discord, you need to config a discord bot to a server's channel and get the discord bot token. Once you have done these, mention the token in the env file. 
+# Discord Configuration
+To enable Discord integration:
+1. Configure a Discord bot for a server channel.  
+2. Obtain the bot token.  
+3. Add the token to the `.env` file.  
 
 # Local vs Cloud LLM
-Currently, the project use locally ran llm using **Ollama**. if you want to use a cloud based LLM, config the same in the code. Change the end point and the keys in the code accordingly. 
+By default, the project uses a locally hosted LLM via **Ollama**.  
+If you prefer a cloud-based LLM, update the code with the corresponding API keys and endpoint.  
 
-# Langsmith and tracing
-if you want tracing, make an API key in Langsmith and provide the same in env file.
+# Langsmith and Tracing
+For tracing, generate an API key in **Langsmith** and provide it in the `.env` file.  
 
-# For future work
-A feedback LLM is neede to polish the work flow and will be implemented in the coming days
+# Future Work
+A feedback-driven LLM will be implemented to refine and improve the workflow in upcoming updates.  
